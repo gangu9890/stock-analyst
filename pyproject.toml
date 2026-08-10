@@ -1,0 +1,19 @@
+[project]
+name = "langgraph-stock-analyst"
+version = "0.1.0"
+description = "Parallel multi-agent stock analyst built with LangGraph, Gemini and yfinance"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "langgraph>=1.0",
+  "langchain-google-genai>=4.0",
+  "python-dotenv>=1.0",
+  "yfinance>=0.2.66",
+  "pandas>=2.2",
+]
+
+[project.scripts]
+stock-analyst = "stock_analyst.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

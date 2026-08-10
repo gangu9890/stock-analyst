@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "stock_analyst": "./src/stock_analyst/graph.py:graph"
+  },
+  "env": ".env"
+}
